@@ -7,7 +7,7 @@ namespace R5T.Z0011
 	{
 		#region Infrastructure
 
-	    public static FileNames Instance { get; } = new();
+	    public static IFileNames Instance { get; } = new FileNames();
 
 	    private FileNames()
 	    {

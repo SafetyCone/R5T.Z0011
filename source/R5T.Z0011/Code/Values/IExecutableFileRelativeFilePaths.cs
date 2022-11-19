@@ -9,7 +9,7 @@ namespace R5T.Z0011
 	public partial interface IExecutableFileRelativeFilePaths : IValuesMarker
 	{
 		public string FolderPublishProfileFilePath => IExecutableFileRelativeFilePaths.zFolderPublishProfileFilePath.Value;
-		private static readonly Lazy<string> zFolderPublishProfileFilePath = new(
+		private static readonly Lazy<string> zFolderPublishProfileFilePath = new Lazy<string>(
 			Instances.ExecutableFileRelativePathOperator.GetFilesDirectoryFilePath(
 				Instances.FileNames.FolderPublishProfile));
 	}

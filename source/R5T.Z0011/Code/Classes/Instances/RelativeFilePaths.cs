@@ -7,7 +7,7 @@ namespace R5T.Z0011
 	{
 		#region Infrastructure
 
-	    public static RelativeFilePaths Instance { get; } = new();
+	    public static IRelativeFilePaths Instance { get; } = new RelativeFilePaths();
 
 	    private RelativeFilePaths()
 	    {

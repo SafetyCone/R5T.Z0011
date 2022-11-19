@@ -7,7 +7,7 @@ namespace R5T.Z0011
 	{
 		#region Infrastructure
 
-	    public static ProjectDirectoryRelativeDirectoryPaths Instance { get; } = new();
+	    public static IProjectDirectoryRelativeDirectoryPaths Instance { get; } = new ProjectDirectoryRelativeDirectoryPaths();
 
 	    private ProjectDirectoryRelativeDirectoryPaths()
 	    {

@@ -7,7 +7,7 @@ namespace R5T.Z0011
 	{
 		#region Infrastructure
 
-	    public static ExecutableFileRelativeFilePaths Instance { get; } = new();
+	    public static IExecutableFileRelativeFilePaths Instance { get; } = new ExecutableFileRelativeFilePaths();
 
 	    private ExecutableFileRelativeFilePaths()
 	    {
